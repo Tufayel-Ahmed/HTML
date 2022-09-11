@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        .ulist li {
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 16px;
+        }
+
+        .ulist li a:hover {
+            background-color: #bd1414;
+        }
+        ..menu{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+        .menu li{
+            float: left;
+        }
+        .menu li a{
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            padding: 16px;
+        }
+        .menu li a:hover{
+            background-color: #111111;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="ulist">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <br>
+    <ol>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <li>Tea</li>
+        <ol>
+            <li>Black tea</li>
+            <li>Green tea</li>
+        </ol>
+        <li>Milk</li>
+    </ol>
+    <h1>Chapter Summary</h1>
+    <pre>
+        Use the HTML ul element to define an unordered list
+        Use the CSS list-style-type property to define the list item marker
+        Use the HTML li element to define a list item
+        Lists can be nested
+        List items can contain other HTML elements
+        Use the CSS property float:left to display a list horizontally
+    </pre>
+    <hr>
+    <ol type="i">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <hr>
+    <ol start="52">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <hr>
+    <h1>Chapter Summary</h1>
+    <pre>
+        Use the HTML ol element to define an ordered list
+        Use the HTML type attribute to define the numbering type
+        Use the HTML li element to define a list item
+        Lists can be nested
+        List items can contain other HTML elements
+    </pre>
+    <hr>
+    <h2>Navigation Menu</h2>
+    <p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+    <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</body>
+
+</html>
