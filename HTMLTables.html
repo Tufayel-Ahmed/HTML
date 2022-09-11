@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+    <style>
+       table, th, td{
+            border-bottom: 1px solid black;
+            border-style: outset;
+            border-radius: 10px;
+            border-color: rebeccapurple;
+            width: 100%;
+            border-spacing: 10px;
+        }
+        th, td{
+            text-align: center;
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: aqua;
+        }
+        td:nth-child(even), th:nth-child(even){
+            background-color: aqua;
+        }
+        tr:hover{
+            background-color: #D6EEEE;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Company List</caption>
+        <tr>
+            <th colspan="2">Company & Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td rowspan="2">Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+</body>
+
+</html>
